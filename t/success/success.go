@@ -1,6 +1,6 @@
 package main
 
-import "test/tap"
+import "github.com/dex4er/go-tap"
 
 func main() {
     tap.Ok(true, "Ok")
