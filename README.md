@@ -6,7 +6,9 @@
 go get github.com/dex4er/go-tap
 ```
 
-## t/simple/simple.go
+## Create test
+
+### t/simple/simple.go
 
 ```go
 package main
@@ -19,4 +21,10 @@ func main() {
     tap.Is(123, 123, "Is")
 	tap.DoneTesting()
 }
+```
+
+## Run
+
+```sh
+prove --ext=go --exec='go run' -r t
 ```
